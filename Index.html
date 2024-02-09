@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="css.css">
+<style>
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fcefee; /* Fundo mais suave */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.toolbar {
+    background-color: black; /* Azul escuro */
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-avatar {
+    width: 80px;
+    height: 80px;
+    background-color: #3498db; /* Azul mais claro */
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 50px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.user-avatar:hover {
+    background-color: #2980b9; /* Tom mais escuro de azul */
+}
+
+.profile-content {
+background-image: url(https://i.ibb.co/94gN9Cp/f115041a7164cd7d88dd13ba03d56b80.jpg);
+    background-color: black;
+    color:#db0d0d;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.profile-content:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color: #e74c3c; /* Vermelho */
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #c0392b; /* Tom mais escuro de vermelho */
+}
+
+#authentication {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#enabled-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+input[type="text"] {
+    padding: 12px;
+    border: 1px solid #d35400; /* Laranja */
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #f5cba7; /* Fundo mais claro de laranja */
+    color: #633d28; /* Tom mais escuro de laranja */
+}
+
+.contact-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-info p {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #27ae60; /* Verde */
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #218c53; /* Tom mais escuro de verde */
+}
+
+.social-media {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    transition: transform 0.3s;
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* Adicione este estilo ao seu arquivo css.css */
+
+.dialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.dialog h2 {
+    color: #333;
+}
+
+.dialog p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.dialog button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dialog button:hover {
+    background-color: #2980b9;
+}
+
+</style>
+    <title>2024</title>
+    <meta property="og:title" content="JIS GALAX-BOT V2.0.0">
+    <meta property="og:description" content="NÃO COMPRE NUNCA MAIS UM BOT DO CRASH USE ESSE DE GRAÇA">
+    <meta property="og:image" content="https://i.ibb.co/94gN9Cp/f115041a7164cd7d88dd13ba03d56b80.jpg">
+    <meta property="og:url" content="jis-galaxy-bot.netlify.app/">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8939065923961050" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="toolbar">
+        <img class="user-avatar" src="https://i.ibb.co/94gN9Cp/f115041a7164cd7d88dd13ba03d56b80.jpg" alt="Seu Avatar">
+        <button id="logout-button">Sair</button>
+    </div>
+    <div class="profile-content">
+        <h1>CYBER HACKER<br>
+            Atenção: Para uma melhor experiência 🎉, crie uma conta enquanto estiver no bot.<br>
+            Para os usuários com contas, também crie uma nova .
+        </h1>
+        <!-- Removed the authentication section -->
+        <div id="enabled-buttons">
+            <button id="button1" enabled>olabet</button>
+            <button id="button2" enabled>Bantu bet</button>
+        </div>
+    </div>
+
+    <!-- Adicionado o diálogo -->
+    <div id="dialog" class="dialog">
+        <h2>BOT 100% grátis</h2>
+        <p>ATENÇÃO
+
+CRIA NOVA CONTA DENTRO DO BOT PARA GARANTIR O FUNCIONAMENTO DO BOT</p>
+        <p>mesmo para os usuários com conta crie nova,só não conta a ninguém sobre a existência do nosso bot</p>
+        <p>Escolha uma opção:</p>
+        <button onclick="download()">whatsapp</button>
+        <button onclick="cancel()">OK</button>
+    </div>
+
+    <!-- Contact email and social media links -->
+    <div class="contact-info">
+        <p>Contato de suporte: <a href="maboteadriano5@gmail.com">mabotedriano@gmail.com</a></p>
+    </div>
+
+    <script src="profile.js"></script>
+
+    <script>
+    
+        function download() {
+            window.location.href = "https://chat.whatsapp.com/KFTyX0bEfaN726loPwelCz"; // Link do download
+        }
+
+        function cancel() {
+            document.getElementById('dialog').style.display = 'none';
+        }
+
+        // Exibir o diálogo no início da atividade
+        window.onload = function() {
+            document.getElementById('dialog').style.display = 'block';
+        };
+    </script>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const logoutButton = document.getElementById("logout-button");
+  const button1 = document.getElementById("button1");
+  const button2 = document.getElementById("button2");
+
+  logoutButton.addEventListener("click", function () {
+    // Simular cierre de sesión: redirigir a la página de inicio de sesión
+    window.location.href = "index.html";
+  });
+
+  // Lógica de redirección para los botones adicionales
+  button1.addEventListener("click", function () {
+    window.location.href = "https://cmt4ev.mimo.run/index.html";
+  });
+
+  button2.addEventListener("click", function () {
+    window.location.href = "https://srnht5.mimo.run/index.html";
+  });
+});
+
+    </script>
+</body>
+</html>
